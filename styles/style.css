@@ -1,0 +1,85 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lobster&family=Manrope:wght@400;700&family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&family=Roboto:wght@400;500;700&family=Work+Sans:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lobster&family=Manrope:wght@400;700&family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&family=Roboto:wght@400;500;700&family=Work+Sans:wght@500;700&display=swap');
+
+/* Common styles */
+* {
+    margin: 0;
+}
+
+/* Navigation section styles start */
+
+nav, .header{
+    background-color: #FF900E1A;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.website-title {
+    font-size: 45px;
+    margin-top: 50px;
+    margin-left: 228px;
+}
+
+.nav-bar {
+    margin-top: 63px;
+    margin-right: 240px;
+}
+
+.nav-bar ul {
+    padding: 0;
+}
+
+.nav-bar ul li {
+    list-style-type: none;
+    display: inline;
+    padding-left: 30px;
+}
+
+.nav-bar ul li a {
+    color: #424242;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* Navigation section styles end */
+
+.header{
+    text-align: center;
+}
+
+.header-title{
+    font-size: 64px;
+}
+
+/* Responsive part */
+@media screen and (max-width: 576px) {
+    .nav{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .nav-bar{
+        margin: 0;
+    }
+
+    .website-title{
+        font-size: 36px;
+        margin: 10px;
+    }
+
+    .nav-bar ul li{
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Responsive navigation part end */
+    
+}
