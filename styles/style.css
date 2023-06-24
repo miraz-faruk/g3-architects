@@ -17,7 +17,8 @@
 nav,
 .header,
 .photo,
-.main {
+.main
+.facts {
     background-color: #FF900E1A;
     font-family: 'Work Sans', sans-serif;
 }
@@ -139,7 +140,7 @@ nav,
 
 /* Photos section style end */
 
-.main {
+.main, .facts {
     background: none;
     margin: 100px 240px 100px 240px;
 }
@@ -149,6 +150,7 @@ nav,
     justify-content: center;
     align-items: center;
     gap: 146px;
+    padding-bottom: 10px;
 }
 
 .main .section-title {
@@ -201,8 +203,7 @@ nav,
 .main .primary-btn{
     font-size: 65px;
     font-weight: 700;
-    padding: 45px 42px;
-    
+    padding: 45px 42px;  
 }
 #btn{
     font-size: 25px;
@@ -210,6 +211,15 @@ nav,
 }
 
 /* main section style end */
+
+.facts .section-title{
+    font-size: 45px;
+}
+
+.facts .section-description{
+    font-size: 16px;
+}
+
 
 /* Responsive part */
 @media screen and (max-width: 576px) {
@@ -299,9 +309,9 @@ nav,
 
     /* Responsive Photo section end */
 
-    /* Responsive main section start */
+    /* Responsive main and facts section start */
 
-    .main {
+    .main, .facts {
         margin: 50px 20px;
     }
 
@@ -321,7 +331,7 @@ nav,
         font-size: 36px;
         padding-bottom: 24px;
     }
-    
-    /* Responsive main section end */
+
+    /* Responsive main and facts section end */
 
 }
