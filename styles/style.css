@@ -3,6 +3,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lobster&family=Manrope:wght@400;700&family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&family=Roboto:wght@400;500;700&family=Work+Sans:wght@500;700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lobster&family=Manrope:wght@400;700&family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&family=Roboto:wght@400;500;700&family=Work+Sans:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lobster&family=Manrope:wght@400;700&family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&family=Roboto:wght@400;500;700&family=Work+Sans:wght@400;500;600;700&display=swap');
+
 /* Common styles */
 * {
     margin: 0;
@@ -10,7 +14,8 @@
 
 /* Navigation section styles start */
 
-nav, .header{
+nav,
+.header {
     background-color: #FF900E1A;
     font-family: 'Work Sans', sans-serif;
 }
@@ -50,36 +55,97 @@ nav, .header{
 
 /* Navigation section styles end */
 
-.header{
+/* Header section style start */
+
+.header-container {
     text-align: center;
 }
 
-.header-title{
+.header-title {
     font-size: 64px;
+    padding: 50px 300px 30px 300px;
 }
+
+.header-description {
+    font-size: 16px;
+    color: #727272;
+    padding: 0 300px 33px 300px;
+}
+
+.primary-btn {
+    border-style: none;
+    border-radius: 8px;
+    background-color: #FF900E;
+    color: white;
+    font-size: 20px;
+    padding: 21px 24px 20px 25px;
+}
+
+.header-banner {
+    padding: 50px 240px 45px 240px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Header section style end */
 
 /* Responsive part */
 @media screen and (max-width: 576px) {
-    .nav{
+    .nav {
         flex-direction: column;
         gap: 5px;
     }
 
-    .nav-bar{
+    .nav-bar {
         margin: 0;
     }
 
-    .website-title{
+    .website-title {
         font-size: 36px;
         margin: 10px;
     }
 
-    .nav-bar ul li{
+    .nav-bar ul li {
         padding: 10px;
         justify-content: space-between;
         align-items: center;
     }
 
     /* Responsive navigation part end */
+
+    .header-title {
+        font-size: 24px;
+        padding: 25px 8px 10px 8px;
+    }
+
+    .header-description {
+        padding: 0 8px 10px 8px;
+    }
+
+    .primary-btn {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .header-banner {
+        padding: 20px 10px 15px 10px;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
     
+    .header-banner img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 8px;
+    }
+    
+    /* Responsive header part end */
 }
