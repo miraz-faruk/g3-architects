@@ -16,7 +16,8 @@
 
 nav,
 .header,
-.photo {
+.photo,
+.main {
     background-color: #FF900E1A;
     font-family: 'Work Sans', sans-serif;
 }
@@ -138,6 +139,78 @@ nav,
 
 /* Photos section style end */
 
+.main {
+    background: none;
+    margin: 100px 240px 100px 240px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 146px;
+}
+
+.main .section-title {
+    font-size: 45px;
+    padding-bottom: 24px;
+}
+
+.section-info .section-title {
+    padding-left: 24px;
+    position: relative;
+}
+
+.section-info h3 {
+    position: relative;
+}
+
+.section-info h3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 106px;
+    width: 5px;
+    background-color: #FF900E;
+}
+
+.main .section-description {
+    padding-bottom: 30px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+
+.feature {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    padding: 30px 42px 30px 30px;
+}
+
+.feature-title {
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.main .primary-btn{
+    font-size: 65px;
+    font-weight: 700;
+    padding: 45px 42px;
+    
+}
+#btn{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* main section style end */
+
 /* Responsive part */
 @media screen and (max-width: 576px) {
     .nav {
@@ -225,5 +298,30 @@ nav,
     }
 
     /* Responsive Photo section end */
+
+    /* Responsive main section start */
+
+    .main {
+        margin: 50px 20px;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .main-container img{
+        width: 100%;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .main .section-title {
+        font-size: 36px;
+        padding-bottom: 24px;
+    }
+    
+    /* Responsive main section end */
 
 }
