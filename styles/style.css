@@ -17,8 +17,9 @@
 nav,
 .header,
 .photo,
-.main
-.facts {
+.main, 
+.facts,
+.awards {
     background-color: #FF900E1A;
     font-family: 'Work Sans', sans-serif;
 }
@@ -140,7 +141,8 @@ nav,
 
 /* Photos section style end */
 
-.main, .facts {
+.main,
+.facts {
     background: none;
     margin: 100px 240px 100px 240px;
 }
@@ -200,26 +202,67 @@ nav,
     font-weight: 600;
 }
 
-.main .primary-btn{
+.main .primary-btn {
     font-size: 65px;
     font-weight: 700;
-    padding: 45px 42px;  
+    padding: 45px 42px;
 }
-#btn{
+
+#btn {
     font-size: 25px;
     font-weight: 500;
 }
 
 /* main section style end */
 
-.facts .section-title{
+.facts .section-title {
     font-size: 45px;
 }
 
-.facts .section-description{
+.facts .section-description {
     font-size: 16px;
 }
 
+/* Facts section style end */
+
+.awards {
+    background: none;
+    margin: 0 290 130 290;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    margin: 0;
+    width: 242px;
+    height: 242px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    padding: 46px 36px 60px 36px;
+}
+
+.item img {
+    width: 45px;
+    height: 45px;
+    padding-bottom: 10px;
+}
+
+.item .item-title {
+    color: #424242;
+    font-size: 45px;
+    padding-bottom: 5px;
+}
+
+.item .item-description {
+    color: #727272;
+    font-size: 20px;
+    font-weight: 600;
+}
 
 /* Responsive part */
 @media screen and (max-width: 576px) {
@@ -311,7 +354,8 @@ nav,
 
     /* Responsive main and facts section start */
 
-    .main, .facts {
+    .main,
+    .facts {
         margin: 50px 20px;
     }
 
@@ -321,7 +365,7 @@ nav,
         gap: 30px;
     }
 
-    .main-container img{
+    .main-container img {
         width: 100%;
         height: auto;
         padding-bottom: 50px;
