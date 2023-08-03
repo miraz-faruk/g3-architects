@@ -227,7 +227,7 @@ nav,
 
 .awards {
     background: none;
-    margin: 0 290 130 290;
+    margin: 0px 290px 180px 290px;
 }
 
 .items {
@@ -238,12 +238,10 @@ nav,
 
 .item {
     margin: 0;
-    width: 242px;
-    height: 242px;
     text-align: center;
     border-radius: 8px;
     border: 1px solid #FF900E;
-    padding: 46px 36px 60px 36px;
+    padding: 46px 41px 60px 42px;
 }
 
 .item img {
@@ -263,7 +261,7 @@ nav,
     font-size: 20px;
     font-weight: 600;
 }
-
+  
 /* Responsive part */
 @media screen and (max-width: 576px) {
     .nav {
@@ -377,5 +375,19 @@ nav,
     }
 
     /* Responsive main and facts section end */
+
+    /* Responsive award section start */
+
+    .awards{
+        margin: 100px 20px 180px 20px;
+    }
+
+    .items{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
+    }
+    
+    /* Responsive award section end */
 
 }
