@@ -292,6 +292,9 @@ nav,
 .sponsor-logo .logos{
     display: flex;
     justify-content: space-between;
+    /* display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px; */
 }
 
 /* Sponsor logo style end */
@@ -424,5 +427,19 @@ nav,
     }
 
     /* Responsive award section end */
+
+    /* Responsive sponsor logo start */
+
+    .sponsor-logo{
+        margin: 10px;
+    }
+    .sponsor-logo .logos{
+        justify-items: center;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+    }
+
+    /* Responsive sponsor logo end */
 
 }
