@@ -443,6 +443,10 @@ footer p{
         gap: 24px;
     }
 
+    .item:hover {
+        transform: scale(1.5); 
+    }
+
     /* Responsive award section end */
 
     /* Responsive sponsor logo start */
