@@ -305,7 +305,7 @@ footer{
 
 footer p{
     text-align: center;
-    padding: 39px 410px;
+    padding: 39px 200px;
     font-size: 20px;
     color: #424242;
 }
@@ -461,6 +461,11 @@ footer p{
     footer{
         background: #FFF4E7;
         margin: 50px 10px;
+    }
+
+    footer p{
+        padding: 15px 50px;
+        font-size: 18px;
     }
     /* Responsive footer end */
 
