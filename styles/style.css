@@ -264,6 +264,10 @@ footer {
     font-weight: 600;
 }
 
+.item:hover {
+    transform: scale(1.5); 
+}
+
 /* Award section style end */
 
 .sponsor {
