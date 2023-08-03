@@ -17,10 +17,11 @@
 nav,
 .header,
 .photo,
-.main, 
+.main,
 .facts,
 .awards,
-.sponsor {
+.sponsor,
+footer {
     background-color: #FF900E1A;
     font-family: 'Work Sans', sans-serif;
 }
@@ -265,12 +266,12 @@ nav,
 
 /* Award section style end */
 
-.sponsor{
+.sponsor {
     background: none;
     margin: 0px 500px 50px 500px;
 }
 
-.sponsor .content{
+.sponsor .content {
     text-align: center;
 }
 
@@ -285,20 +286,32 @@ nav,
 
 /* Sponsor section style end */
 
-.sponsor-logo{
+.sponsor-logo {
     margin: 0 240px 130px 240px;
 }
 
-.sponsor-logo .logos{
+.sponsor-logo .logos {
     display: flex;
     justify-content: space-between;
-    /* display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 24px; */
 }
 
 /* Sponsor logo style end */
-  
+
+footer{
+    background: #FFF4E7;
+    margin: 0 240px 216px 240px;
+    border-radius: 8px;
+}
+
+footer p{
+    text-align: center;
+    padding: 39px 410px;
+    font-size: 20px;
+    color: #424242;
+}
+
+/* Footer style end */
+
 /* Responsive part */
 @media screen and (max-width: 576px) {
     .nav {
@@ -416,11 +429,11 @@ nav,
 
     /* Responsive award section start */
 
-    .awards{
+    .awards {
         margin: 100px 20px 180px 20px;
     }
 
-    .items{
+    .items {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 24px;
@@ -430,10 +443,11 @@ nav,
 
     /* Responsive sponsor logo start */
 
-    .sponsor-logo{
+    .sponsor-logo {
         margin: 10px;
     }
-    .sponsor-logo .logos{
+
+    .sponsor-logo .logos {
         justify-items: center;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -441,5 +455,13 @@ nav,
     }
 
     /* Responsive sponsor logo end */
+
+    /* Responsive footer start */
+
+    footer{
+        background: #FFF4E7;
+        margin: 50px 10px;
+    }
+    /* Responsive footer end */
 
 }
