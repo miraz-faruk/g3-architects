@@ -19,7 +19,8 @@ nav,
 .photo,
 .main, 
 .facts,
-.awards {
+.awards,
+.sponsor {
     background-color: #FF900E1A;
     font-family: 'Work Sans', sans-serif;
 }
@@ -261,6 +262,28 @@ nav,
     font-size: 20px;
     font-weight: 600;
 }
+
+/* Award section style end */
+
+.sponsor{
+    background: none;
+    margin: 0px 500px 50px 500px;
+}
+
+.sponsor .content{
+    text-align: center;
+}
+
+.sponsor .section-title {
+    font-size: 45px;
+    padding-bottom: 24px;
+}
+
+.sponsor .section-description {
+    font-size: 16px;
+}
+
+/* Sponsor section style end */
   
 /* Responsive part */
 @media screen and (max-width: 576px) {
@@ -350,10 +373,11 @@ nav,
 
     /* Responsive Photo section end */
 
-    /* Responsive main and facts section start */
+    /* Responsive main, facts and sponsor section start */
 
     .main,
-    .facts {
+    .facts,
+    .sponsor {
         margin: 50px 20px;
     }
 
@@ -374,7 +398,7 @@ nav,
         padding-bottom: 24px;
     }
 
-    /* Responsive main and facts section end */
+    /* Responsive main, facts and sponsor section end */
 
     /* Responsive award section start */
 
@@ -387,7 +411,7 @@ nav,
         grid-template-columns: repeat(1, 1fr);
         gap: 24px;
     }
-    
+
     /* Responsive award section end */
 
 }
