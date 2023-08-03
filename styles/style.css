@@ -284,6 +284,17 @@ nav,
 }
 
 /* Sponsor section style end */
+
+.sponsor-logo{
+    margin: 0 240px 130px 240px;
+}
+
+.sponsor-logo .logos{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Sponsor logo style end */
   
 /* Responsive part */
 @media screen and (max-width: 576px) {
